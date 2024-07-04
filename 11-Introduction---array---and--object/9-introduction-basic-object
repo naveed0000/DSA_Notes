@@ -1,0 +1,45 @@
+let x = { 
+    name : "sanket", 
+    age : 24
+}
+
+let y = { 
+    name: "Fardeen", 
+    age: 36
+}
+
+// how to access key value pairs 
+// Note : from key u can access values but not vice-a-versa
+/*
+    why we cannot access a value from a key ?? 
+     ->    in an object key are unique, but multple different key can have same value in a object. 
+*/
+console.log(x["name"]); // put key as a string it return a value 
+console.log(y.name);
+
+
+// are object mutable ? Yes 
+y.name = "naveed";  // update object 
+console.log(y);
+
+
+// 10th Video  : add value or remove key value 
+
+
+// how to add a new property to an already created object 
+x.marks = 100; // if marks key is present it will update it, otherwrise, it adds it 
+x["company"] = "google"; 
+console.log(x)
+
+
+// delete a key value pair ? 
+// we can use delete operator operator along with object.key 
+delete x.name; 
+console.log(x);
+
+
+//
+
+
+
+
